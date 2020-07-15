@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+    <PreferenceCategory
+        android:key="priceCategory"
+        android:title="Transport Prices"
+        >
+        <EditTextPreference
+            android:dialogTitle="Tram Price"
+            android:dialogMessage="Enter the price of a tram ride."
+            android:inputType="number"
+            android:defaultValue="20"
+            android:key="@string/pref_tram_price"
+            android:title="Tram Price"
+            android:summary="Set the price of a tram ride">
+        </EditTextPreference>
+        <EditTextPreference
+            android:dialogTitle="Bus Price"
+            android:dialogMessage="Enter the price of a bus ride."
+            android:inputType="number"
+            android:defaultValue="20"
+            android:key="@string/pref_bus_price"
+            android:title="Bus Price"
+            android:summary="Set the price of a bus ride">
+        </EditTextPreference>
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:key="databaseCategory"
+        android:title="Database"
+        >
+        <PreferenceScreen
+            android:title="Edit data"
+            android:summary="Insert and remove records from database">
+            <PreferenceCategory
+                android:key="databaseEditDataPreferenceCategory"
+                android:title="Edit Data">
+                <Preference
+                    android:title="Remove Last"
+                    android:key="@string/pref_remove_last"
+                    android:summary="Remove last record from database">
+                </Preference>
+                <Preference
+                    android:title="Remove All"
+                    android:key="@string/pref_remove_all"
+                    android:summary="Remove all records from database">
+                </Preference>
+                <Preference
+                    android:title="Insert Random"
+                    android:key="@string/pref_insert_random"
+                    android:summary="Insert 5 random records">
+                </Preference>
+            </PreferenceCategory>
+
+        </PreferenceScreen>
+    </PreferenceCategory>
+</PreferenceScreen>

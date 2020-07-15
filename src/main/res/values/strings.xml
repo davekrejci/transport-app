@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Transport</string>
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- Strings related to Settings -->
+    <string name="currency">Kč</string>
+    <string name="pref_tram_price">pref_tram_price</string>
+    <string name="pref_bus_price">pref_bus_price</string>
+    <string name="pref_remove_last">pref_remove_last</string>
+    <string name="pref_remove_all">pref_remove_all</string>
+    <string name="pref_insert_random">pref_insert_random</string>
+
+</resources>
